@@ -28,6 +28,56 @@ header h1 {
 
 header p {
     margin-top: 8px;
+}.brand {
+    text-align: center;
+}
+
+.brand-small {
+    display: block;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.brand h1 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+.brand-line {
+    display: block;
+    color: white;
+    font-size: 13px;
+    margin-top: 6px;
+    letter-spacing: 1px;
+}.brand {
+    text-align: center;
+}
+
+.brand-small {
+    display: block;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.brand h1 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+.brand-line {
+    display: block;
+    color: white;
+    font-size: 13px;
+    margin-top: 6px;
+    letter-spacing: 1px;
 }
 
 /* HERO */
