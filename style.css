@@ -34,7 +34,7 @@ header p {
 .hero {
     width: 100%;
     min-height: 100vh;
-    background-image: url("images/Salon.jpg");
+    background-image: url("Salon.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
