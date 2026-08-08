@@ -1,0 +1,685 @@
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/Salon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* HERO TEXT */
+.hero-text {
+    color: white;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.hero-text h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* ABOUT */
+.about {
+    background: white;
+    color: #222;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* SERVICES */
+.services {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box div {
+    width: 250px;
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.service-box h3 {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    display: inline-block;
+    background: #e91e63;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .hero-text {
+        padding: 25px 15px;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .service-box div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2 {
+        font-size: 27px;
+    }
+}/* FLOATING WHATSAPP BUTTON */
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    z-index: 999;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* FLOATING CALL BUTTON */
+
+.call-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    background: #e91e63;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp-float:hover,
+.call-float:hover {
+    transform: scale(1.05);
+}/* ===== PREMIUM SERVICES ===== */
+
+.services {
+    background: linear-gradient(135deg, #111, #222);
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.service-box div {
+    width: 250px;
+    min-height: 170px;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+
+    transition: 0.3s ease;
+}
+
+.service-box div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(233,30,99,0.35);
+}
+
+.service-box h3 {
+    color: #e91e63;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .services {
+        padding: 50px 15px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .service-box {
+        gap: 18px;
+    }
+
+    .service-box div {
+        width: 100%;
+        max-width: 320px;
+    }
+}/* ===== PREMIUM SOCIAL BUTTONS ===== */
+
+.contact a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 8px 5px;
+    padding: 13px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contact a:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== PREMIUM GALLERY ===== */
+
+.gallery {
+    background: #111;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.gallery-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.gallery-box img {
+    width: 280px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+
+    transition: 0.4s ease;
+}
+
+.gallery-box img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 30px rgba(233,30,99,0.4);
+}
+
+/* ===== MOBILE GALLERY ===== */
+
+@media (max-width: 600px) {
+
+    .gallery {
+        padding: 50px 15px;
+    }
+
+    .gallery h2 {
+        font-size: 28px;
+    }
+
+    .gallery-box img {
+        width: 100%;
+        max-width: 330px;
+        height: 220px;
+    }
+}/* SOCIAL ICONS */
+
+.contact a i {
+    font-size: 20px;
+}
+
+.contact a:first-of-type {
+    background: #E1306C;
+    color: white;
+}
+
+.contact a:nth-of-type(2) {
+    background: #25D366;
+    color: white;
+}
+
+.contact a:nth-of-type(3) {
+    background: #e91e63;
+    color: white;
+}/* ============================= */
+/* GOOGLE REVIEWS */
+/* ============================= */
+
+.reviews {
+    padding: 90px 20px;
+    background:
+        linear-gradient(rgba(10,10,10,0.92), rgba(10,10,10,0.95)),
+        url("images/Salon.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.reviews-heading span {
+    color: #d4af37;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.reviews-heading h2 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.reviews-heading p {
+    color: #ccc;
+    font-size: 17px;
+}
+
+.google-rating {
+    margin: 25px auto 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.stars,
+.review-stars {
+    color: #f5b301;
+    letter-spacing: 3px;
+}
+
+.google-rating strong {
+    font-size: 28px;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 28px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.review-avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4af37, #8f6b16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.review-card h3 {
+    margin: 0 0 5px;
+    font-size: 19px;
+}
+
+.review-card p {
+    color: #ddd;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.google-badge {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.reviews-button {
+    margin-top: 45px;
+}
+
+.reviews-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: #d4af37;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.reviews-button a:hover {
+    transform: scale(1.05);
+    background: #fff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .reviews-heading h2 {
+        font-size: 32px;
+    }
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card {
+        padding: 22px;
+    }
+}/* OUR SERVICES */
+
+.services {
+    background: #111;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.services-subtitle {
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    color: #222;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.service-card p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.service-card span {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services h2 {
+        font-size: 30px;
+    }
+}```css
+/* ===== REMOVE BLUE LINK / BUTTON LOOK ===== */
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+}
+
+/* Top navigation */
+.top-header nav a {
+    background: transparent !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Hero buttons */
+.hero a,
+.hero button,
+.gold-btn,
+.outline-btn {
+    text-decoration: none !important;
+    border: none;
+    outline: none;
+}
+
+/* Explore Services */
+.gold-btn {
+    background: #d4af37 !important;
+    color: #111 !important;
+}
+
+/* Call Now */
+.outline-btn {
+    background: transparent !important;
+    color: #fff !important;
+    border: 1px solid #d4af37 !important;
+}
+
+/* Remove browser blue focus outline */
+a:focus,
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Prevent blue tap highlight on mobile */
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+```css
+/* ===== PREMIUM HERO TEXT FIX ===== */
+
+.hero-tag,
+.hero-content p,
+.scroll-down {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+/* Premium Beauty Experience */
+.hero-tag {
+    font-size: 14px !important;
+    letter-spacing: 4px !important;
+}
+
+/* Professional Beauty, Skin & Grooming Services */
+.hero-content p {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1.6;
+}
+
+/* Scroll To Explore */
+.scroll-down {
+    color: #ffffff !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+}
+
+.scroll-down i {
+    color: #ffffff !important;
+    font-size: 18px;
+}
+```
+
